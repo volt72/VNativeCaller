@@ -192,7 +192,7 @@ namespace XeClutch
         public uint JOAAT(string Key)
         {
             uint num = 0;
-            byte[] bytes = Encoding.UTF8.GetBytes(Key);
+            byte[] bytes = Encoding.UTF8.GetBytes(Key.ToLower());
             for (int i = 0; i < bytes.Length; i++)
             {
                 num += bytes[i];
